@@ -1,7 +1,7 @@
 School of C#
 ================
 
-A project aimed to help learn and master programming using C#
+A project aimed to help learn and master programming using C# by viewing examples of the most common functionalities of the language.Think about it as a Book with examples, but without any text and only examples (the fun part), where the knowledge is expressed on comments.
 
 Before you start this class, let's define some basic concepts:
 
