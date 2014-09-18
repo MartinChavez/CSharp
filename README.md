@@ -12,8 +12,8 @@ CLR: Common Language Runtime - Virtual Machine that provides certain servives to
  - Operating System Independence
  - Language Independence
  - 
- FCL: Framework Class Library - Set of Classes that provides common functionality such as:
-- Window applicatrions
-- Web Applications
-- Web Services 
+FCL: Framework Class Library - Set of Classes that provides common functionality such as:
+ - Window applicatrions
+ - Web Applications
+ - Web Services 
 
