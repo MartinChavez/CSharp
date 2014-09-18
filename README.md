@@ -1,4 +1,4 @@
-School-of-CSharp
+School of C#
 ================
 
 A project aimed to help learn and master programming using C#
@@ -12,9 +12,11 @@ CLR: Common Language Runtime - Virtual Machine that provides certain servives to
  - Security
  - Operating System Independence
  - Language Independence
- - 
+
 FCL: Framework Class Library - Set of Classes that provides common functionality such as:
- - Window applicatrions
+ - Window applications
  - Web Applications
  - Web Services 
+ - Network
+ - File I/O
 
