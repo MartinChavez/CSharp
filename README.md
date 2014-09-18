@@ -23,6 +23,6 @@ FCL: Framework Class Library - Set of Classes that provides common functionality
 Topics:
 
  - Fundamentals
- - Classes and Objects
- - Types
- - Events
+ - Classes and Objects (In Progress)
+ - Types (In Progress)
+ - Events (In Progress)
