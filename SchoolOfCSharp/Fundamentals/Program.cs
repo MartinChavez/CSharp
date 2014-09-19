@@ -13,6 +13,8 @@ namespace Fundamentals //'namespace' is a special keyboard that allows to separa
             Console.WriteLine("Hello World"); //Your first statement, this will output to console 'Hello World'
             /*When writting Console Applications, you can use this statement to wait for User Input
              Then the CMD Window won't automatically close*/
+            int sum = 3 + 3;// '3+3' is an Expression  Statement since it evaluates and creates a value
+
             Console.ReadLine();
         }
     }
