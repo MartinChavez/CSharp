@@ -1,11 +1,10 @@
-﻿
-using System;
+﻿using System;
 
 namespace Operators
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             int x = 3;
             x += 2; //Short hand of x = x + 2

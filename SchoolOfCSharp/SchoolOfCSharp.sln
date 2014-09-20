@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimitiveTypes", "Primitive
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Operators", "Operators\Operators.csproj", "{9CB9C70F-AFB1-4D18-B89F-D346F4AE54BB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Classes", "Classes\Classes.csproj", "{271D8481-FC4E-4866-9F70-1D22FE58A6E7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{9CB9C70F-AFB1-4D18-B89F-D346F4AE54BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9CB9C70F-AFB1-4D18-B89F-D346F4AE54BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9CB9C70F-AFB1-4D18-B89F-D346F4AE54BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{271D8481-FC4E-4866-9F70-1D22FE58A6E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{271D8481-FC4E-4866-9F70-1D22FE58A6E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{271D8481-FC4E-4866-9F70-1D22FE58A6E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{271D8481-FC4E-4866-9F70-1D22FE58A6E7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
