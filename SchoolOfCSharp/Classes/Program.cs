@@ -35,7 +35,6 @@ namespace Classes
             Console.WriteLine("Cat's name is " + cat.Name);
             Console.WriteLine("Cat's, which are Animals, breathe like this ");
             cat.Breathe(); //method defined for all Animals 
-        
 
             Console.ReadLine();
         }
