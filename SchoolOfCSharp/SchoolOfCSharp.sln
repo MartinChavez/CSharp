@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "String", "String\String.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Boxing", "Boxing\Boxing.csproj", "{FD2ACA65-42C1-4482-800D-2D92465E686A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enum", "Enum\Enum.csproj", "{6844668A-EA5B-43C2-BF02-59083A9387EB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{FD2ACA65-42C1-4482-800D-2D92465E686A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FD2ACA65-42C1-4482-800D-2D92465E686A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FD2ACA65-42C1-4482-800D-2D92465E686A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6844668A-EA5B-43C2-BF02-59083A9387EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6844668A-EA5B-43C2-BF02-59083A9387EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6844668A-EA5B-43C2-BF02-59083A9387EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6844668A-EA5B-43C2-BF02-59083A9387EB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
