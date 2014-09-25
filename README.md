@@ -1,7 +1,7 @@
-School of C#
+School of C# (Test-Driven Learning)
 ================
 
-A project aimed to help learn and master programming using C# by viewing examples of the most common functionalities of the language.Think about it as a Book with examples, but without any text and only examples (the fun part), where the knowledge is expressed on comments.
+A project aimed to help learn and master programming using C# with a Test-Driven Approach.Think about it as a Book with examples, but without any text and only examples (the fun part), where the knowledge is expressed on comments and Unit Tests.
 
 Before you start this class, let's define some basic concepts:
 
@@ -23,6 +23,6 @@ FCL: Framework Class Library - Set of Classes that provides common functionality
 Topics:
 
  - Fundamentals
- - Classes and Objects (In Progress)
+ - Classes and Objects 
  - Types (In Progress)
  - Events (In Progress)
