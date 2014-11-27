@@ -34,6 +34,6 @@ namespace AccessModifiers
 
         }
 
-       // public class inheritFromSealedClass : SealedClass {}  - You cannot inherit from a 'sealed' class/
+       // public class inheritFromSealedClass : SealedClass {}  - You cannot inherit from a 'sealed' class
     }
 }
