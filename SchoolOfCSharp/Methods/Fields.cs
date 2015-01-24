@@ -7,7 +7,7 @@ namespace Methods
     {
         private const string ReadOnlyVariable = "ReadOnlyValue";
 
-        public string Property { get; set; } //Properties define independent get and set
+        public string Property { get; set; } //Properties define independent get and set, either one could be public or private
 
         [TestMethod]
         public void ReadOnlyFields()
@@ -22,9 +22,6 @@ namespace Methods
         public void VerifyProperty()
         {
             Property = "PropertyValue";
-
-
-
             Assert.AreEqual(Property, "PropertyValue");
         }
     }
