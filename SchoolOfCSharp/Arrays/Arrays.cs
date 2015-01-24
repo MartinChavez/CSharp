@@ -4,7 +4,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace Arrays
 {
     [TestClass]
-    public class UnitTest1
+    public class Arrays
     {
         [TestMethod]
         public void ArrayLenght()

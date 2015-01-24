@@ -38,7 +38,7 @@ namespace Exceptions
             {
                 finallyReached = false;
             }
-            finally //You can use finally block to always execute a series of statements
+            finally //You can use finally block to always force execution of a series of statements
             {
                 finallyReached = true;
             }
