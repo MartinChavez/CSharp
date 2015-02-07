@@ -16,4 +16,6 @@ Topics:
  - Loops
  - Methods
  - Operators
- - Primitive Types vs Value Types
+ - Primitive Types
+ - Value Types
+ - Garbage Collection
