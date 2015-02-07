@@ -11,20 +11,20 @@ namespace Loops
         [TestMethod]
         public void YieldReturn()
         {
-            var primerNumbers = EvenNumbers().Cast<int>().ToList();
+            var evenNumbers = EvenNumbers().Cast<int>().ToList();
 
             var evenNumbersResult = new List<int> { 0, 2, 4};
 
             var numTimes = 0;
             foreach (var evenNumberResult in evenNumbersResult)
             {
-                Assert.AreEqual(evenNumberResult, primerNumbers[numTimes]);
+                Assert.AreEqual(evenNumberResult, evenNumbers[numTimes]);
                 numTimes++;
             }
         }
 
 
-        private static IEnumerable EvenNumbers()
+        private static IEnumerable EvenNumbers() //Instead of returning a list
         {
             for (var number = 0; number < 6; number++)
             {
