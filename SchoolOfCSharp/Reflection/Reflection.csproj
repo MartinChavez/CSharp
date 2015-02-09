@@ -54,7 +54,7 @@
     <Compile Include="Reflection.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="AttributesTest.cs" />
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="AssemblyReflection.cs" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

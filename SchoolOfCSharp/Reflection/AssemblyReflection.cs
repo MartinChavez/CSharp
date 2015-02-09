@@ -7,16 +7,16 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace Reflection
 {
     [TestClass]
-    public class UnitTest1
+    public class AssemblyReflection
     {
         [TestMethod]
         public void LoadAssemblyAtRuntime()
         {
             var loggerInstanciated = false;
-            //You can load assemblies at runtime and create Types
+            //You can load assemblies at runtime and create Types and execute methods
             foreach (var logger in (from type in Assembly.GetExecutingAssembly().GetTypes() where type.GetInterface("ILogger") != null select Activator.CreateInstance(type)).OfType<ILogger>())
             {
-                //You can  execute methods at runtime as well
+                //You can load assemblies  execute methods
                 logger.LogMessage("Complete");
                 loggerInstanciated = logger.LoggerInstanciated();
             }
@@ -29,7 +29,6 @@ namespace Reflection
     {
         void LogMessage(String message);
         bool LoggerInstanciated();
-
     }
 
     public class ConsoleLogger : ILogger
