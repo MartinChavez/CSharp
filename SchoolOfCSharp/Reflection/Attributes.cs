@@ -1,14 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.Remoting.Messaging;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Reflection
 {
-    [AttributeUsage(AttributeTargets.Property)]
-    public class DangerZoneAttribute : Attribute
+    [AttributeUsage(AttributeTargets.Property)] //You can create class(or method) level attributes
+    public class DangerZoneAttribute : Attribute //In order to create attributes you need to inherit from Attribute Interface
     {
         public DangerZoneAttribute(int min, int max)
         {
