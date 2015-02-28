@@ -52,6 +52,7 @@
   <ItemGroup>
     <Compile Include="ComTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PInvokeTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <COMReference Include="SKYPE4COMLib">
