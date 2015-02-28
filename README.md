@@ -7,17 +7,19 @@ Topics:
 
  - Fundamentals
  - Classes and Objects 
+ - Primitive Types
  - Types
  - Events 
- - Access Modifires
+ - Access Modifiers
  - Arrays
  - Boxing
  - Exceptions
  - Loops
  - Methods
  - Operators
- - Primitive Types
  - Value Types
  - Garbage Collection
  - Threads
  - Reflection
+ - COM Interop
+ - PInvoke
