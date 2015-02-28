@@ -43,6 +43,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Threads", "Threads\Threads.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reflection", "Reflection\Reflection.csproj", "{1FCC5526-9F86-473A-ADA9-BF2DA4AF66CA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "COM Interop", "COM Interop\COM Interop.csproj", "{0183E205-5312-44F6-A070-37AF3B6C8917}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -125,6 +127,10 @@ Global
 		{1FCC5526-9F86-473A-ADA9-BF2DA4AF66CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1FCC5526-9F86-473A-ADA9-BF2DA4AF66CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1FCC5526-9F86-473A-ADA9-BF2DA4AF66CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0183E205-5312-44F6-A070-37AF3B6C8917}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0183E205-5312-44F6-A070-37AF3B6C8917}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0183E205-5312-44F6-A070-37AF3B6C8917}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0183E205-5312-44F6-A070-37AF3B6C8917}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
