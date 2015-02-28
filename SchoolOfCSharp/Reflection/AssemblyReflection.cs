@@ -13,7 +13,7 @@ namespace Reflection
         public void LoadAssemblyAtRuntime()
         {
             var loggerInstanciated = false;
-            //You can load assemblies at runtime and create Types and execute methods
+            //You can load assemblies at runtime, Find all the Types from the dll and execute methods
             foreach (var logger in (from type in Assembly.GetExecutingAssembly().GetTypes() where type.GetInterface("ILogger") != null select Activator.CreateInstance(type)).OfType<ILogger>())
             {
                 //You can load assemblies  execute methods
@@ -33,7 +33,7 @@ namespace Reflection
 
     public class ConsoleLogger : ILogger
     {
-        public ConsoleLogger()
+        public ConsoleLogger() //while loading dynamically this assembly, we can execute this method without an instance of ConsoleLogger, due to Reflection
         {
             Debug.WriteLine("ConsoleLogger created");
         }
