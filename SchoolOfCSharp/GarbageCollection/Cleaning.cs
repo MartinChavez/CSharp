@@ -17,7 +17,8 @@ namespace GarbageCollection
                 var csharp = new CsharpClass(i.ToString(CultureInfo.InvariantCulture)); //You create a new memory allocation in every loop
             }
             //Approximately the GC ran 403 times for this loop
-            Assert.IsTrue(GetTotalCollections() < 403);
+            Assert.IsTrue(GetTotalCollections() < 500);
+          
         }
 
         [TestMethod]
