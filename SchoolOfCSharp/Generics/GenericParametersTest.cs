@@ -20,7 +20,7 @@ namespace Generics
             randomInt.Insert(5);
 
             randomInt.Remove();
-            //We verify that in fact, we removed an Int value
+            //We verify that in fact, we removed an Int value from the Randomizer
             Assert.IsTrue(randomInt.Count() < 5);
         }
     }
