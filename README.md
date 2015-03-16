@@ -1,7 +1,7 @@
 School of C# (Test-Driven Learning)
 ================
 
-A project aimed to help learn and master programming using C# with a Test-Driven Approach. Think about it as a Book with examples, where the knowledge is expressed on comments and Unit Tests. Join me for an incredible dynamic journey to the in-depths of C#/.Net
+A project aimed to help the user master the C# language with a test-driven approach. Each unit starts with an annotated tutorial and concludes with a test covering key concepts highlighted in the unit.
 
 Topics:
 
