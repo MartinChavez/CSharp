@@ -45,6 +45,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reflection", "Reflection\Re
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "COM Interop", "COM Interop\COM Interop.csproj", "{0183E205-5312-44F6-A070-37AF3B6C8917}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generics", "Generics\Generics.csproj", "{27E2B68B-EB37-4159-84E5-54EF12A592CF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -131,6 +133,10 @@ Global
 		{0183E205-5312-44F6-A070-37AF3B6C8917}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0183E205-5312-44F6-A070-37AF3B6C8917}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0183E205-5312-44F6-A070-37AF3B6C8917}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27E2B68B-EB37-4159-84E5-54EF12A592CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27E2B68B-EB37-4159-84E5-54EF12A592CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27E2B68B-EB37-4159-84E5-54EF12A592CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27E2B68B-EB37-4159-84E5-54EF12A592CF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
