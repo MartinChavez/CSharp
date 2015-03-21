@@ -9,17 +9,31 @@ namespace Generics
         [TestMethod]
         public void GenericConstrains()
         {
+                                                                  //Open generic Type Parameters
             var disposer = new Disposer<ImplementsIDisposable>(); //Disposer will only accept Types which implement IDisposable
-
             var implementsIDisposable = new ImplementsIDisposable();
-
             var disposeSucceded = disposer.Dispose(implementsIDisposable);
 
             Assert.IsTrue(disposeSucceded);
         }
+
+        [TestMethod]
+        public void GenericReflection()
+        {
+            var disposer = CreateDisposer(typeof (ImplementsIDisposable)) as Disposer<ImplementsIDisposable>; //You can specify at runtime the Generic Type you want to create
+            var implementsIDisposable = new ImplementsIDisposable();
+            var disposeSucceded = disposer != null && disposer.Dispose(implementsIDisposable); //You can use Disposer as in the previous method
+
+            Assert.IsTrue(disposeSucceded);
+        }
+
+        private static object CreateDisposer(Type type)
+        {
+            var implementsIDisposableType = typeof (Disposer<>); //This is an unbound generic type
+            return Activator.CreateInstance(implementsIDisposableType.MakeGenericType(type)); //Creating an instance at runtime using reflection
+        }
     }
 }
-
 
 internal class Disposer<TDisposer> where TDisposer : IDisposable // You can set conditions on the Generic Type in order to perform more activities with give instance at runtime
 {
