@@ -23,12 +23,17 @@ namespace Parameters
         public void NamedParameters()
         {
             //By stating the name of the optional parameter, the code becomes more readable
-            Assert.AreEqual(GetString(optionalString : "NewString"), "NewString");
+            Assert.AreEqual(GetNull(nullParam: "NewString"), "NewString");
         }
 
         private static string GetString(string optionalString = "OptionalString") //You can specify the method signature with default values
         {
             return optionalString;
+        }
+
+        private static string GetNull(string nullParam = null) //You can define reference Types with default param as null
+        {
+            return nullParam;
         }
     }
 }
