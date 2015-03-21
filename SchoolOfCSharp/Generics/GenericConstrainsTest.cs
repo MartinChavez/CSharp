@@ -52,7 +52,7 @@ namespace Generics
     }
 }
 
-internal class Disposer<TDisposer> where TDisposer : IDisposable // You can set conditions on the Generic Type in order to perform more activities with give instance at runtime
+internal class Disposer<TDisposer> where TDisposer : IDisposable // You can set conditions on the Generic Type in order to perform more activities with the given instance at runtime
 {
     public bool Dispose(TDisposer item)
     {
