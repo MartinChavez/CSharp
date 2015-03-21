@@ -37,6 +37,15 @@ namespace Generics
             Assert.IsTrue(disposeSucceded);
         }
 
+        [TestMethod]
+        public void DefaultKeyword() //The default keyword is used in a context where you do not know the Type at runtime
+        {
+            // default of Referenece Types is Null
+            Assert.IsNull(ReturnDefault<ImplementsIDisposable>());
+            // default of Value Numeric types is generally 0
+            Assert.IsTrue(ReturnDefault<int>() == 0);
+        }
+
         private static object CreateDisposer(Type type)
         {
             var implementsIDisposableType = typeof (Disposer<>); //This is an unbound generic type
@@ -48,6 +57,11 @@ namespace Generics
         {
             var implementsIDisposableType = typeof(Disposer<>);
             return Activator.CreateInstance(implementsIDisposableType.MakeGenericType(typeof(T))) as Disposer<T>;  //We get the type at runtime via the T Type
+        }
+
+        private static T ReturnDefault<T>()
+        {
+            return default(T);
         }
     }
 }
