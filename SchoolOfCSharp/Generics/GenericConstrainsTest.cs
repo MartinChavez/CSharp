@@ -27,10 +27,27 @@ namespace Generics
             Assert.IsTrue(disposeSucceded);
         }
 
+        [TestMethod]
+        public void GenericMethods()
+        {
+            var disposer = CreateDisposer<ImplementsIDisposable>(); //It simplifies Disposer creation
+            var implementsIDisposable = new ImplementsIDisposable();
+            var disposeSucceded = disposer != null && disposer.Dispose(implementsIDisposable); //You can use Disposer as in the previous method
+
+            Assert.IsTrue(disposeSucceded);
+        }
+
         private static object CreateDisposer(Type type)
         {
             var implementsIDisposableType = typeof (Disposer<>); //This is an unbound generic type
-            return Activator.CreateInstance(implementsIDisposableType.MakeGenericType(type)); //Creating an instance at runtime using reflection
+            return Activator.CreateInstance(implementsIDisposableType.MakeGenericType(type)); //We get the type at runtime via the Type parameter
+        }
+
+        //You can specify the T of the return value
+        private static Disposer<T> CreateDisposer<T>() where T : IDisposable  //You can create Generic methods as well, with the same constrains as the class
+        {
+            var implementsIDisposableType = typeof(Disposer<>);
+            return Activator.CreateInstance(implementsIDisposableType.MakeGenericType(typeof(T))) as Disposer<T>;  //We get the type at runtime via the T Type
         }
     }
 }
