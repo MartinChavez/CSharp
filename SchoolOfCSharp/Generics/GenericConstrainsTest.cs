@@ -61,7 +61,7 @@ namespace Generics
 
         private static T ReturnDefault<T>()
         {
-            return default(T);
+            return default(T);//This could be null or 0 *for most Int types
         }
     }
 }
