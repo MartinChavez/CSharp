@@ -25,11 +25,11 @@ Topics:
  - PInvoke
  - Generics
   
- ### Example: Reflection - CodeGeneration
+ ### Example: Reflection - Code Generation
 
 In this example we explain the use of Reflection and how to dynamically create code using C# / .Net
 
-<!-- -->
+<!--  -->
 
 [TestMethod]
         public void DynamicallyCreatingCode()
