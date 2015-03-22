@@ -29,4 +29,4 @@ Questions?
 ----------
 
 If you have any questions, please feel free to ask me:
-[Learn C#](martin.chavez@live.com)
+[Martin Chavez Aguilar](mailto:martin.chavez@live.com)
