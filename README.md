@@ -24,11 +24,9 @@ Topics:
  - COM Interop
  - PInvoke
  - Generics
- 
- ### Example: Reflection - Code Generation
-
+Example: Reflection - Code Generation
+====================
 In this example we explain the use of Reflection and how to dynamically create code using C# / .Net
-
 <!--  -->
 
         [TestMethod]
@@ -46,8 +44,8 @@ In this example we explain the use of Reflection and how to dynamically create c
             action();//Prints in Debug console
         }
 
-Questions?
-----------
+Questions ?
+====================
 
 If you have any questions, please feel free to ask me:
 [Martin Chavez Aguilar](mailto:martin.chavez@live.com)
