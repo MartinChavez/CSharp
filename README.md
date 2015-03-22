@@ -24,3 +24,9 @@ Topics:
  - COM Interop
  - PInvoke
  - Generics
+ 
+Questions?
+----------
+
+If you have any questions, please feel free to ask on the
+[Learn C#](martin.chavez@live.com)\
