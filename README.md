@@ -28,5 +28,5 @@ Topics:
 Questions?
 ----------
 
-If you have any questions, please feel free to ask on the
-[Learn C#](martin.chavez@live.com)\
+If you have any questions, please feel free to ask me:
+[Learn C#](martin.chavez@live.com)
