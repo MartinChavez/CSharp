@@ -23,7 +23,7 @@ namespace Reflection
 
             action();//Prints in Debug console
 
-            Assert.IsNotNull(action); //This statement verifies that the action was created at runtime
+            Assert.AreEqual(action.GetType(), typeof(Action)); //This statement verifies that the action was created at runtime
         }
     }
 }
