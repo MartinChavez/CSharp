@@ -2,7 +2,7 @@
 
 namespace Fundamentals //'namespace' is a special keyboard that allows to separate the code in a meaninful manner
 {
-    class Program //Every single time you want to execute code, it needs to be inside of a Type, in this case, a Class
+    class LearnThisFirst //Every single time you want to execute code, it needs to be inside of a Type, in this case, a Class
     {
         static void Main() //Method that will execute first when running the program
         {
