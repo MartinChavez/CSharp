@@ -55,3 +55,8 @@ Contributors
 ====================
 
 * [Martin Chavez Aguilar](https://www.linkedin.com/in/martinchavezaguilar) - Wrote the project
+
+References
+====================
+
+* [Pluralsight: Accelerated C# Fundamentals](http://www.pluralsight.com/courses/csharp-fundamentals)
