@@ -40,7 +40,7 @@ namespace Parameters
 
         private void SetAgeToTwo(Animal animal)
         {
-            animal = new Animal(); //We are changing the reference of the veriable 'animal', therfore the original object won't be changed
+            animal = new Animal(); //We are changing the reference of the variable 'animal', therfore the original object won't be changed
             animal.Age = 2;
         }
 

@@ -4,7 +4,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace String
 {
     [TestClass]
-    public class UnitTest1
+    public class StringTests
     {
         [TestMethod]
         public void StringEqualsComparison()
