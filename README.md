@@ -34,8 +34,8 @@ In this example we explain the use of Reflection and how to dynamically create c
         public void DynamicallyCreatingCode()
         {
             var methodInfo = typeof (Debug).GetMethod("WriteLine", new Type[] {typeof (string)}); //This extracts the method information from Debug.Writeline 
-            var dynamicMethod = new DynamicMethod("DynamicMethod",typeof(void),new Type[]{}); //This specified the method signature
-            var ilGenerator = dynamicMethod.GetILGenerator(); //We use GetILGenerator() in order to be able to create IL 
+            var dynamicMethod = new DynamicMethod("DynamicMethod",typeof(void),new Type[]{}); //This specifies the method signature
+            var ilGenerator = dynamicMethod.GetILGenerator(); //We use GetILGenerator() in order to create IL 
             /*We use MS Intermidiate language calls to load the required info*/
             ilGenerator.Emit(OpCodes.Ldstr, "Test Dynamic Method");
             ilGenerator.Emit(OpCodes.Call, methodInfo);
