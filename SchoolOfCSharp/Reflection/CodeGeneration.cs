@@ -22,6 +22,8 @@ namespace Reflection
             var action = (Action)dynamicMethod.CreateDelegate(typeof(Action)); //We can create dynamic delegates and execute our method
 
             action();//Prints in Debug console
+
+            Assert.IsNotNull(action); //This statement verifies that the action was created at runtime
         }
     }
 }
