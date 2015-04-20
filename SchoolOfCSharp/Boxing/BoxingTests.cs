@@ -4,7 +4,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace Boxing
 {
     [TestClass]
-    public class UnitTest1
+    public class BoxingTests
     {
         [TestMethod]
         public void Boxing()
