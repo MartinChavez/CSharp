@@ -11,7 +11,7 @@ namespace Reflection
         [TestMethod]
         public void DynamicallyCreatingCode()
         {
-            var methodInfo = typeof (Debug).GetMethod("WriteLine", new Type[] {typeof (string)}); //This extracts the method information from Debug.Writeline 
+            var methodInfo = typeof (Debug).GetMethod("WriteLine", new[] {typeof (string)}); //This extracts the method information from Debug.Writeline 
             var dynamicMethod = new DynamicMethod("DynamicMethod",typeof(void),new Type[]{}); //This specifies the method signature
             var ilGenerator = dynamicMethod.GetILGenerator(); //We use GetILGenerator() in order to create IL
             /*We use MS Intermidiate language calls to load the required info*/
