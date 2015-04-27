@@ -30,7 +30,7 @@ Topics:
 Example: Reflection - Code Generation
 ====================
 In this example we explain the use of Reflection and how to dynamically create code using C# / .Net
-<a name="README">[<img src="https://s3-us-west-2.amazonaws.com/testdrivenlearningbucket/CodeGeneration.png" />](https://github.com/MartinChavez/Learn-CSharp) </a>
+<a name="README">[<img src="https://s3-us-west-2.amazonaws.com/testdrivenlearningbucket/CodeGeneration2.png" />](https://github.com/MartinChavez/Learn-CSharp)</a>
 
 
 Run the Unit Tests
