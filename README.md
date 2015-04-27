@@ -39,9 +39,6 @@ All Unit Tests are passing, you can modify the content of the tests in order to 
 
 <a name="README">[<img src="https://s3-us-west-2.amazonaws.com/testdrivenlearningbucket/PassingRunningTests.png" />](https://github.com/MartinChavez/Learn-CSharp)</a>
 
-Example: Reflection - Code Generation
-====================
-In this example we explain the use of Reflection and how to dynamically create code using C# / .Net
 
 Questions ?
 ====================
