@@ -11,17 +11,17 @@ namespace Reflection
         [TestMethod]
         public void DynamicallyCreatingCode()
         {
-            var methodInfo = typeof (Debug).GetMethod("WriteLine", new[] {typeof (string)}); //This extracts the method information from Debug.Writeline 
-            var dynamicMethod = new DynamicMethod("DynamicMethod",typeof(void),new Type[]{}); //This specifies the method signature
-            var ilGenerator = dynamicMethod.GetILGenerator(); //We use GetILGenerator() in order to create IL
-            /*We use MS Intermidiate language calls to load the required info*/
+            var methodInfo = typeof(Debug).GetMethod("WriteLine", new[] { typeof(string) }); //The method ‘GetMethod’ extracts the method information from Debug.Writeline 
+            var dynamicMethod = new DynamicMethod("DynamicMethod", typeof(void), new Type[] { }); //We can specify the method signature by using a type of DynamicMethod
+            var ilGenerator = dynamicMethod.GetILGenerator(); //We use 'GetILGenerator()' in order to create IL statements
+            /*We use MS Intermediate Language calls to load the required information*/
             ilGenerator.Emit(OpCodes.Ldstr, "Test Dynamic Method");
             ilGenerator.Emit(OpCodes.Call, methodInfo);
             ilGenerator.Emit(OpCodes.Ret);//Return statement
 
             var action = (Action)dynamicMethod.CreateDelegate(typeof(Action)); //We can create dynamic delegates and execute our method
 
-            action();//Prints in Debug console
+            action();//Prints in Debug Console
 
             Assert.AreEqual(action.GetType(), typeof(Action)); //This statement verifies that the action was created at runtime
         }
