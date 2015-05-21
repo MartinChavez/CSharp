@@ -31,7 +31,7 @@ Example: Reflection - Code Generation
 ====================
 In this example we explain the use of Reflection and how to dynamically create code using C# / .Net
 ```CSharp
-         [TestMethod]
+        [TestMethod]
         public void DynamicallyCreatingCode()
         {   //The method ‘GetMethod’ extracts the method information from Debug.Writeline 
             var methodInfo = typeof(Debug).GetMethod("WriteLine", new[] { typeof(string) }); 
