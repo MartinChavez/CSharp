@@ -31,22 +31,24 @@ Example: Reflection - Code Generation
 ====================
 In this example we explain the use of Reflection and how to dynamically create code using C# / .Net
 ```CSharp
-[TestMethod]
+         [TestMethod]
         public void DynamicallyCreatingCode()
-        {
-            var methodInfo = typeof(Debug).GetMethod("WriteLine", new[] { typeof(string) }); //The method ‘GetMethod’ extracts the method information from Debug.Writeline 
-            var dynamicMethod = new DynamicMethod("DynamicMethod", typeof(void), new Type[] { }); //We can specify the method signature by using a type of DynamicMethod
-            var ilGenerator = dynamicMethod.GetILGenerator(); //We use 'GetILGenerator()' in order to create IL statements
+        {   //The method ‘GetMethod’ extracts the method information from Debug.Writeline 
+            var methodInfo = typeof(Debug).GetMethod("WriteLine", new[] { typeof(string) }); 
+            //We can specify the method signature by using a type of DynamicMethod
+            var dynamicMethod = new DynamicMethod("DynamicMethod", typeof(void), new Type[] { }); 
+            //We use 'GetILGenerator()' in order to create IL statements
+            var ilGenerator = dynamicMethod.GetILGenerator();
             /*We use MS Intermediate Language calls to load the required information*/
             ilGenerator.Emit(OpCodes.Ldstr, "Test Dynamic Method");
             ilGenerator.Emit(OpCodes.Call, methodInfo);
             ilGenerator.Emit(OpCodes.Ret);//Return statement
-
-            var action = (Action)dynamicMethod.CreateDelegate(typeof(Action)); //We can create dynamic delegates and execute our method
+            //We can create dynamic delegates and execute our method
+            var action = (Action)dynamicMethod.CreateDelegate(typeof(Action)); 
 
             action();//Prints in Debug Console
-
-            Assert.AreEqual(action.GetType(), typeof(Action)); //This statement verifies that the action was created at runtime
+            //This statement verifies that the action was created at runtime
+            Assert.AreEqual(action.GetType(), typeof(Action));
             }
 ```
 
