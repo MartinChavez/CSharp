@@ -47,6 +47,7 @@ In this example we explain the use of Reflection and how to dynamically create c
             action();//Prints in Debug Console
 
             Assert.AreEqual(action.GetType(), typeof(Action)); //This statement verifies that the action was created at runtime
+            }
 ```
 
 Run the Unit Tests
