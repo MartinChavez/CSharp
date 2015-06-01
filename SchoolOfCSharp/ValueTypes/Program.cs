@@ -11,7 +11,7 @@ namespace ValueTypes
 
             //No pointers or references
             //No object allocated on the heap
-            int valueTypeInt = 4; //No need to use the 'new' keyboard
+            int valueTypeInt = 4; //No need to use the 'new' keyword
             int valueTypeIntTwo = new int(); //but you could
             valueTypeIntTwo = 5;
             valueTypeInt = valueTypeIntTwo; //This is a copy and paste from memory, not a reference
