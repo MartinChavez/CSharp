@@ -1,6 +1,6 @@
-﻿using System;  //Use 'using' keyboard to tell the compiler that you are using the 'System' namespace
+﻿using System;  //Use 'using' keyword to tell the compiler that you are using the 'System' namespace
 
-namespace Fundamentals //'namespace' is a special keyboard that allows to separate the code in a meaninful manner
+namespace Fundamentals //'namespace' is a special keyword that allows to separate the code in a meaninful manner
 {
     class LearnThisFirst //Every single time you want to execute code, it needs to be inside of a Type, in this case, a Class
     {
