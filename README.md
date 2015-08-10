@@ -1,4 +1,4 @@
-<a name="README">[<img src="https://s3-us-west-2.amazonaws.com/testdrivenlearningbucket/c%23.jpg"  width="300px" height="200px" />](https://github.com/MartinChavez/Learn-CSharp)</a>
+<a name="README">[<img src="https://s3-us-west-2.amazonaws.com/testdrivenlearningbucket/c%23.jpg"  width="250px" height="200px" />](https://github.com/MartinChavez/Learn-CSharp)</a>
 
 C# : Test-Driven Learning
 ================
