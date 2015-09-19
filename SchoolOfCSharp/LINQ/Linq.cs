@@ -1,10 +1,9 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace LINQ
 {
     [TestClass]
-    public class UnitTest1
+    public class Linq
     {
         [TestMethod]
         public void TestMethod1()
