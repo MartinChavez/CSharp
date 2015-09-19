@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>C#  by MartinChavez</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>C# </h1>
+        <h2>Test-Driven Learning</h2>
+        <a href="https://github.com/MartinChavez/CSharp" class="button"><small>View project on</small> GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <p><a name="README"></a><a href="https://github.com/MartinChavez/Learn-CSharp"><img src="https://s3-us-west-2.amazonaws.com/testdrivenlearningbucket/csharp7.png" width="200px" height="180px"></a></p>
+
+<h1>
+<a id="c--test-driven-learning" class="anchor" href="#c--test-driven-learning" aria-hidden="true"><span class="octicon octicon-link"></span></a>C# : Test-Driven Learning</h1>
+
+<p>A project aimed to help the user master the C# language with a test-driven approach. Each unit contains an annotated tutorial on the code itself and the ability to run Unit Tests to verify the expected behavior.</p>
+
+<p>Topics:</p>
+
+<ul>
+<li>Fundamentals</li>
+<li>Classes and Objects </li>
+<li>Primitive Types</li>
+<li>Types</li>
+<li>Events </li>
+<li>Access Modifiers</li>
+<li>Arrays</li>
+<li>Boxing</li>
+<li>Exceptions</li>
+<li>Loops</li>
+<li>Methods</li>
+<li>Operators</li>
+<li>Value Types</li>
+<li>Garbage Collection</li>
+<li>Threads</li>
+<li>Reflection</li>
+<li>COM Interop</li>
+<li>PInvoke</li>
+<li>Generics</li>
+</ul>
+
+<h1>
+<a id="example-reflection---code-generation" class="anchor" href="#example-reflection---code-generation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Example: Reflection - Code Generation</h1>
+
+<p>In this example we explain the use of Reflection and how to dynamically create code using C# / .Net</p>
+
+<div class="highlight highlight-source-cs"><pre>        [TestMethod]
+        <span class="pl-k">public</span> <span class="pl-k">void</span> DynamicallyCreatingCode()
+        {   <span class="pl-c">//The method ‘GetMethod’ extracts the method information from Debug.Writeline </span>
+            <span class="pl-k">var</span> methodInfo = <span class="pl-k">typeof</span>(Debug).GetMethod(<span class="pl-s"><span class="pl-pds">"</span>WriteLine<span class="pl-pds">"</span></span>, <span class="pl-k">new</span>[] { <span class="pl-k">typeof</span>(<span class="pl-k">string</span>) }); 
+            <span class="pl-c">//We can specify the method signature by using a type of DynamicMethod</span>
+            <span class="pl-k">var</span> dynamicMethod = <span class="pl-k">new</span> DynamicMethod(<span class="pl-s"><span class="pl-pds">"</span>DynamicMethod<span class="pl-pds">"</span></span>, <span class="pl-k">typeof</span>(<span class="pl-k">void</span>), <span class="pl-k">new</span> Type[] { }); 
+            <span class="pl-c">//We use 'GetILGenerator()' in order to create IL statements</span>
+            <span class="pl-k">var</span> ilGenerator = dynamicMethod.GetILGenerator();
+            <span class="pl-c">/*We use MS Intermediate Language calls to load the required information*/</span>
+            ilGenerator.Emit(OpCodes.Ldstr, <span class="pl-s"><span class="pl-pds">"</span>Test Dynamic Method<span class="pl-pds">"</span></span>);
+            ilGenerator.Emit(OpCodes.Call, methodInfo);
+            ilGenerator.Emit(OpCodes.Ret);<span class="pl-c">//Return statement</span>
+            <span class="pl-c">//We can create dynamic delegates and execute our method</span>
+            <span class="pl-k">var</span> action = (Action)dynamicMethod.CreateDelegate(<span class="pl-k">typeof</span>(Action)); 
+
+            action();<span class="pl-c">//Prints in Debug Console</span>
+            <span class="pl-c">//This statement verifies that the action was created at runtime</span>
+            Assert.AreEqual(action.GetType(), <span class="pl-k">typeof</span>(Action));
+            }</pre></div>
+
+<h1>
+<a id="run-the-unit-tests" class="anchor" href="#run-the-unit-tests" aria-hidden="true"><span class="octicon octicon-link"></span></a>Run the Unit Tests</h1>
+
+<p>All Unit Tests are passing, you can modify the content of the tests in order to try different combinations or concepts.</p>
+
+<p><a name="README"></a><a href="https://github.com/MartinChavez/Learn-CSharp"><img src="https://s3-us-west-2.amazonaws.com/testdrivenlearningbucket/PassingRunningTests.png"></a></p>
+
+<h1>
+<a id="questions-" class="anchor" href="#questions-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Questions ?</h1>
+
+<p>If you have any questions, please feel free to ask me:
+<a href="mailto:martin.chavez@live.com">Martin Chavez Aguilar</a></p>
+
+<h1>
+<a id="contributors" class="anchor" href="#contributors" aria-hidden="true"><span class="octicon octicon-link"></span></a>Contributors</h1>
+
+<ul>
+<li>
+<a href="http://martinchavezaguilar.com/">Martin Chavez Aguilar</a> - Wrote the project</li>
+</ul>
+
+<h1>
+<a id="continue-learning" class="anchor" href="#continue-learning" aria-hidden="true"><span class="octicon octicon-link"></span></a>Continue Learning</h1>
+
+<p><a name="README"></a><a href="https://github.com/MartinChavez/Learn-Javascript"><img src="https://camo.githubusercontent.com/eb464a60a4a47f8b600aa71bfbc6aff3fe5c5392/68747470733a2f2f7261772e6769746875622e636f6d2f766f6f646f6f74696b69676f642f6c6f676f2e6a732f6d61737465722f6a732e706e67" width="50px" height="50px"></a>
+<a name="README"></a><a href="https://github.com/MartinChavez/AngularJs-Basics"><img src="https://pbs.twimg.com/profile_images/2149314222/square.png" width="50px" height="50px"></a>
+<a name="README"></a><a href="https://github.com/MartinChavez/AngularJS-Advanced-Topics"><img src="https://s3-us-west-2.amazonaws.com/testdrivenlearningbucket/angularadvanced.png" width="50px" height="50px"></a>
+<a name="README"></a><a href="https://github.com/MartinChavez/jQueryBasics"><img src="http://precision-software.com/wp-content/uploads/2014/04/jQurery.gif" width="50px" height="50px"></a>
+<a name="README"></a><a href="https://github.com/MartinChavez/HTML-CSS"><img src="https://s3-us-west-2.amazonaws.com/testdrivenlearningbucket/htmlcss.jpg" width="65px" height="50px"></a>
+<a name="README"></a><a href="https://github.com/MartinChavez/HTML-CSS-Advanced-Topics"><img src="https://s3-us-west-2.amazonaws.com/testdrivenlearningbucket/htmlcssblack.jpg" width="50px" height="50px"></a></p>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/MartinChavez/CSharp/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/MartinChavez/CSharp/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/MartinChavez/CSharp"></a> is maintained by <a href="https://github.com/MartinChavez">MartinChavez</a>.</p>
+
+          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
+
+  
+  </body>
+</html>
