@@ -51,7 +51,7 @@ namespace Fundamentals //'namespace' is a special keyword that allows to separat
 Garbage Collection
 ====================
 ```CSharp
-[TestMethod]
+        [TestMethod]
         [ExpectedException(typeof(OutOfMemoryException))]
         public void OutOfMemory()
         {
@@ -78,7 +78,7 @@ Garbage Collection
 Generics
 ====================
 ```CSharp
-[TestMethod]
+        [TestMethod]
         public void DefaultKeyword() //The default keyword is used in a context where you do not know the Type at runtime
         {
             // default of Referenece Types is Null
@@ -90,14 +90,14 @@ Generics
         private static object CreateDisposer(Type type)
         {
             var implementsIDisposableType = typeof (Disposer<>); //This is an unbound generic type
-            return Activator.CreateInstance(implementsIDisposableType.MakeGenericType(type)); //We get the type at runtime via the Type parameter
+            return Activator.CreateInstance(implementsIDisposableType.MakeGenericType(type)); //We get the type at runtime               via the Type parameter
         }
 
         //You can specify the T of the return value
-        private static Disposer<T> CreateDisposer<T>() where T : IDisposable  //You can create Generic methods as well, with the same constrains as the class
+        private static Disposer<T> CreateDisposer<T>() where T : IDisposable  //You can create Generic methods as well, with         the same constrains as the class
         {
             var implementsIDisposableType = typeof(Disposer<>);
-            return Activator.CreateInstance(implementsIDisposableType.MakeGenericType(typeof(T))) as Disposer<T>;  //We get the type at runtime via the T Type
+            return Activator.CreateInstance(implementsIDisposableType.MakeGenericType(typeof(T))) as Disposer<T>;  //We get              the type at runtime via the T Type
         }
 
         private static T ReturnDefault<T>()
