@@ -97,7 +97,7 @@ Generics
         private static Disposer<T> CreateDisposer<T>() where T : IDisposable  //You can create Generic methods as well, with         the same constrains as the class
         {
             var implementsIDisposableType = typeof(Disposer<>);
-            return Activator.CreateInstance(implementsIDisposableType.MakeGenericType(typeof(T))) as Disposer<T>;  //We get              the type at runtime via the T Type
+return Activator.CreateInstance(implementsIDisposableType.MakeGenericType(typeof(T))) as Disposer<T>;  //We get              the type at runtime via the T Type
         }
 
         private static T ReturnDefault<T>()
