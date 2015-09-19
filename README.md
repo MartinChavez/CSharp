@@ -75,7 +75,7 @@ Garbage Collection
         }
 
 ```
-gENERICS
+Generics
 ====================
 ```CSharp
 [TestMethod]
