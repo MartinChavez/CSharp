@@ -97,7 +97,7 @@ Generics
             return Activator.CreateInstance(implementsIDisposableType.MakeGenericType(type)); //We get the type at runtime via the Type parameter
         }
 
-        //You can specify the T of the return value
+        //You can specify the T of the returned value
         private static Disposer<T> CreateDisposer<T>() where T : IDisposable  //You can create Generic methods as well, with the same constrains as the class
         {
             var implementsIDisposableType = typeof(Disposer<>);
