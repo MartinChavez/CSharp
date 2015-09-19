@@ -1,17 +1,13 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Enum
 {
     [TestClass]
-    public class UnitTest1
+    public class EnumTest
     {
-
-        public enum Animal  //Value type that is a set of named constants
+        private enum Animal  //Value type that is a set of named constants
         {
-            Cat,
             Dog,
-            Tiger,
             Bear
         }
 
