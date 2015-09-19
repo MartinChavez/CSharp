@@ -76,7 +76,7 @@ Garbage Collection
 
 ```
 
-Reflection - Code Generation
+Reflection: Code Generation
 ====================
 In this example we explain the use of Reflection and how to dynamically create code using C# / .Net
 ```CSharp
