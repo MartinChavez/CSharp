@@ -2,7 +2,7 @@
 C# : Test-Driven Learning
 ================
 
-A project aimed to help the user master the C# language with a test-driven approach. Each unit contains an annotated tutorial on the code itself and the ability to run Unit Tests to verify the expected behavior.
+This project is aimed to help the user further study C# with a test-driven approach. Each unit contains an annotated tutorial and a platform where you can test your understanding of the topic.
 
 Topics:
 
