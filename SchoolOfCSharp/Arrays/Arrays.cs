@@ -7,12 +7,12 @@ namespace Arrays
     public class Arrays
     {
         [TestMethod]
-        public void ArrayLenght()
+        public void ArrayLength()
         {
             int[] IntArray = new int[5];
-            const int expectedLenght = 5;
+            const int expectedLength = 5;
 
-            Assert.AreEqual(IntArray.Length, expectedLenght);
+            Assert.AreEqual(IntArray.Length, expectedLength);
         }
 
         [TestMethod]
