@@ -29,7 +29,7 @@ Topics:
  
 Tools
 ====================
-<a name="README">[<img src="http://www.codeproject.com/KB/cross-platform/860150/vs2015.png" width="50px" height="50px" />](https://www.visualstudio.com/en-us/products/vs-2015-product-editions.aspx)</a>
+<a name="README">[<img src="https://martinchavez.github.io/Assets/Logos/visual-studio.svg" width="50px" height="50px" />](https://visualstudio.microsoft.com/vs/)</a>
 
 Basics
 ====================
