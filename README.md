@@ -157,7 +157,7 @@ Run the Unit Tests
 ====================
 All Unit Tests are passing, you can modify the content of the tests in order to try different combinations or concepts.
 
-<a name="README">[<img src="runtests.png" />]</a>
+<a name="README"><img src="runtests.png" /></a>
 
 ## Author
 
